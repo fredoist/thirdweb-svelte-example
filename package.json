@@ -6,18 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier -w . --ignore-path .gitignore"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
+    "@vercel/node": "^2.5.8",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "svelte": "^3.49.0",
     "vite": "^3.0.0"
   },
   "dependencies": {
     "@thirdweb-dev/react": "^2.6.2",
     "@thirdweb-dev/sdk": "^2.3.34",
+    "cookie": "^0.5.0",
     "ethers": "^5.6.9"
   }
 }
